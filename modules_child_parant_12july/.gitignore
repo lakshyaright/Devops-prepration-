@@ -4,14 +4,9 @@
 *.tfstate.*
 *.tfvars
 
-# Terraform Plan
-*.tfplan
-
-# VS Code
+# IDE
 .vscode/
 
-# Windows
-Thumbs.db
-
-# macOS
+# OS
 .DS_Store
+Thumbs.db
