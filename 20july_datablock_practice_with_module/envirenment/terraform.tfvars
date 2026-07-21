@@ -23,6 +23,12 @@ vnets = {
         location            = "westus"
         resource_group_name = "sProd_rg"
     }
+     vnet2 = {
+        name                = "ravi_vnet"
+        address_space       = ["10.101.0.0/16"]
+        location            = "westus"
+        resource_group_name = "ravi-rg"
+    }
 }
 
 #subnets
@@ -44,6 +50,12 @@ subnets = {
     resource_group_name  = "SProd_rg"
     virtual_network_name = "main_vnet"
       address_prefixes     = ["10.100.3.0/24"]
+  }
+  subnet4 = {
+    name = "ravi_subnet"
+    resource_group_name = "ravi-rg"
+    virtual_network_name = "ravi_vnet"
+    address_prefixes = ["10.101.1.0/24"]
   }
 }
 
